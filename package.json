@@ -17,6 +17,10 @@
     "dev": "npm-run-all --parallel start watch",
     "start": "serve public"
   },
+  "repository": {
+    "url": "github:djordjelacmanovic/procedural-artsy-lines",
+    "type": "git"
+  },
   "author": {
     "name": "Djordje Lacmanovic",
     "email": "hello@djordje.dev",
