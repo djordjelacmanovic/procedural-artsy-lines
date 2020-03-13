@@ -145,7 +145,7 @@ class Sketch {
   }
 
   _windowResized() {
-    this.size = this._normalizedSize;
+    this._size = this._normalizedSize;
   }
 }
 
