@@ -89,11 +89,23 @@ class Sketch {
     return standardDeviationFactor;
   }
 
-  _initSettings() {
+  set _size(size) {
+    this.settings = {
+      ...this.settings,
+      size
+    };
+    return size;
+  }
+
+  get _normalizedSize() {
     let { offsetWidth: width } = this._parentContainer;
+    return Math.min(width, Sketch.defaultSettings.size);
+  }
+
+  _initSettings() {
     this._settings = {
       ...Sketch.defaultSettings,
-      size: Math.min(width, Sketch.defaultSettings.size)
+      size: this._normalizedSize
     };
     Object.freeze(this._settings);
   }
@@ -133,8 +145,7 @@ class Sketch {
   }
 
   _windowResized() {
-    this._initSettings();
-    this._initGenerator();
+    this.size = this._normalizedSize;
   }
 }
 
