@@ -41,6 +41,7 @@ class Sketch {
 
   set settings(settings) {
     this._settings = settings;
+    Object.freeze(this._settings);
     this._initGenerator();
     return this._settings;
   }
