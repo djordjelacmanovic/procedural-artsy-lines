@@ -1,6 +1,8 @@
 # Procedural Artsy Lines
 
-Demo [here](https://www.djordje.dev/procedural-artsy-lines/).
+[DEMO](https://www.djordje.dev/procedural-artsy-lines/).
+
+The why and the how - [here](https://www.djordje.dev/blog/2020/03/14/procedural-line-art.html).
 
 ## License
 
