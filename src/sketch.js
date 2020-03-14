@@ -28,7 +28,7 @@ class Sketch {
       maxSegmentCount: 5000,
       minLengthToSpawn: 10,
       maxSegmentGeneration: 100,
-      size: 480,
+      size: 500,
       useGaussian: true,
       standardDeviationFactor: 0.3,
       seed: "this-is-my-seed"
